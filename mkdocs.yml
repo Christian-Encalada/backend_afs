@@ -1,0 +1,9 @@
+site_name: PLANIFIA API
+docs_dir: src/docs
+nav:
+  - Home: index.md
+  - Internationalization I18n:
+      - Overview: multilanguage/Internationalization.md
+      - Endpoints: multilanguage/endpoints.md
+      - Errors: multilanguage/errors.md
+

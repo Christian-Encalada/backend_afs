@@ -1,0 +1,64 @@
+image: python:3.7.4-alpine3.10
+
+pipelines:
+  branches:
+    develop:
+      - step:
+          name: Build, Tag, and Push to ECR
+          deployment: staging
+          services:
+            - docker
+          caches:
+            - pip
+          script:
+            - echo "DATABASE_USER=${DATABASE_USER}" > .env
+            - echo "DATABASE_PASSWORD=${DATABASE_PASSWORD}" >> .env
+            - echo "DATABASE_HOST=${DATABASE_HOST}" >> .env
+            - echo "DATABASE_PORT=${DATABASE_PORT}" >> .env
+            - echo "DATABASE_NAME=${DATABASE_NAME}" >> .env
+            - echo "DATABASE_SSL_FILE=${DATABASE_SSL_FILE}" >> .env
+            - echo "SECRET_KEY_JWT=${SECRET_KEY_JWT}" >> .env
+            - echo "EXPIRES_IN_JWT=${EXPIRES_IN_JWT}" >> .env
+            - echo "DEVELOPMENT=${DEVELOPMENT}" >> .env
+            - echo "EMAIL_API_URL=${EMAIL_API_URL}" >> .env
+            - echo "EMAIL_API_KEY=${EMAIL_API_KEY}" >> .env
+            - echo "NEXT_PUBLIC_FRONTEND_URL=${NEXT_PUBLIC_FRONTEND_URL}" >> .env
+            - echo "NEXT_PUBLIC_BACKEND_URL=${NEXT_PUBLIC_BACKEND_URL}" >> .env
+            - pip3 install awscli
+            - aws configure set aws_access_key_id "${AWS_ACCESS_KEY_ID}"
+            - aws configure set aws_secret_access_key "${AWS_SECRET_ACCESS_KEY}"
+            - aws configure set region "${AWS_REGION}"
+            - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $AWS_ECR_REGISTRY
+            - mkdir -p ssl
+            - aws secretsmanager get-secret-value --secret-id db-cert --query SecretString --output text > ssl/db-cert.pem
+            - docker build --build-arg ENV_FILE=.env -t $AWS_ECR_REPOSITORY .
+            - docker tag $AWS_ECR_REPOSITORY:latest $AWS_ECR_REGISTRY/$AWS_ECR_REPOSITORY:latest
+            - docker images
+            - docker push $AWS_ECR_REGISTRY/$AWS_ECR_REPOSITORY:latest
+
+      - step:
+          name: Deploy to EC2
+          caches:
+            - pip
+          script:
+            - pip3 install awscli
+            - aws configure set aws_access_key_id "${AWS_ACCESS_KEY_ID}"
+            - aws configure set aws_secret_access_key "${AWS_SECRET_ACCESS_KEY}"
+            - aws configure set region "${AWS_REGION}"
+            - >-
+              aws ssm send-command
+              --document-name "AWS-RunShellScript"
+              --targets '[{"Key":"tag:Name","Values":["backend-planifia"]}]'
+              --parameters 'commands=[
+                "aws configure set aws_access_key_id '${AWS_ACCESS_KEY_ID}'",
+                "aws configure set aws_secret_access_key '${AWS_SECRET_ACCESS_KEY}'",
+                "aws configure set region '${AWS_REGION}'",
+                "aws ecr get-login-password --region '${AWS_REGION}' | docker login --username AWS --password-stdin '${AWS_ECR_REGISTRY}'",
+                "docker images -a | grep 'planifia' | xargs docker rmi",
+                "docker pull '${AWS_ECR_REGISTRY}'/'${AWS_ECR_REPOSITORY}':latest",
+                "docker stop backend || true",
+                "docker rm backend || true",
+                "docker run -d --name backend -p 3000:3000 '${AWS_ECR_REGISTRY}'/'${AWS_ECR_REPOSITORY}':latest",
+                "docker exec -it backend npm run start:dev"
+              ]'
+              --comment "Deploy new Docker image to EC2"
