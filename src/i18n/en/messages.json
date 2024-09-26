@@ -1,0 +1,137 @@
+{
+  "user": {
+    "user_created": "The user has been successfully created.",
+    "user_updated": "The user has been successfully",
+    "bad_request": "Bad Request.",
+    "fetching_user": "Fetching user with ID: {id}",
+    "creating_user": "Creating user",
+    "updating_user": "Updating user with ID: {id}",
+    "fetching_users": "Fetching user",
+    "changed_password": "Password changed successfully",
+    "deleting_user": "Deleting user with ID: {id}",
+    "user_deleted": "User {username} has been successfully deleted.",
+    "resetting_password": "Resetting password for user with ID {userId}.",
+    "password_reset_successful": "Password has been successfully reset for user with ID {userId}.",
+    "fetched_users": "{count} users have been obtained."
+
+   
+  },
+    "client": {
+    "client_created": "The client has been successfully created.",
+    "client_updated": "The client has been successfully updated.",
+    "fetching_all_clients": "Fetching all clients from the database",
+    "fetched_clients": "Fetched {count} clients",
+    "fetching_client": "Fetching client with id {id}",
+    "client_does_not_exist": "The client does not exist",
+    "client_deleted": "Client deleted successfully"
+  },
+  "quote": {
+    "fetching_all_quotes": "Fetching all quotes from the database",
+    "fetched_quotes": "Fetched {count} quotes",
+    "fetching_quote": "Fetching quote with id {id}",
+    "quote_created": "Quote created successfully",
+    "quote_updated": "Quote updated successfully",
+    "creating_quote": "Creating quote",
+    "creating_recurrence_quote": "Creating recurrence quote",
+    "recurrence_quote_created": "Recurrence quote created successfully",
+    "updating_recurrence_quote": "Updating recurrence quote with id {id}",
+    "recurrence_quote_updated": "Recurrence quote updated successfully"
+  },
+  "canton": {
+    "canton_created": "Canton has been successfully created.",
+    "fetching_cantons": "Fetching cantons",
+    "cantons_retrieved": "Cantons retrieved successfully"
+  },
+  "province": {
+    "province_created": "Province has been successfully created.",
+    "fetching_provinces": "Fetching provinces",
+    "provinces_retrieved": "Provinces retrieved successfully"
+  },
+  "parish": {
+    "parish_created": "Parish has been successfully created.",
+    "fetching_parishes": "Fetching parishes",
+    "parishes_retrieved": "Parishes retrieved successfully"
+  },
+  "country": {
+    "country_created": "Country has been successfully created.",
+    "fetched_countries": "Fetched countries"
+  },
+  "template": {
+    "template_created": "Template has been successfully created.",
+    "template_updated": "Template has been successfully updated.",
+    "template_deleted": "Template has been successfully deleted.",
+    "creating_template": "Creating template",
+    "updating_template": "Updating template with ID: {id}",
+    "fetching_all_templates": "Fetching all templates...",
+    "fetching_filtered_templates": "Fetching filtered templates...",
+    "fetched_all_templates": "All templates have been successfully fetched.",
+    "fetched_filtered_templates": "{count} filtered templates have been successfully fetched.",
+    "templates_retrieved": "Templates retrieved successfully",
+    "status_changed": "Template status changed successfully",
+    "changing_status": "Changing status of template with ID: {id}",
+    "template_action_created": "Template action has been successfully created.",
+    "template_action_updated": "Template action has been successfully updated.",
+    "creating_template_action": "Creating template action",
+    "updating_template_action": "Updating template action with ID: {id}",
+    "fetching_template_actions": "Fetching template actions",
+    "template_actions_retrieved": "Template actions retrieved successfully",
+    "template_env_created": "Template environment variable has been successfully created.",
+    "template_env_updated": "Template environment variable has been successfully updated.",
+    "creating_template_env": "Creating template environment variable",
+    "updating_template_env": "Updating template environment variable with ID: {id}",
+    "fetching_template_envs": "Fetching template environment variables",
+    "template_envs_retrieved": "Template environment variables retrieved successfully",
+    "template_default_created": "Template default has been successfully created.",
+    "template_default_updated": "Template default has been successfully updated.",
+    "creating_template_default": "Creating template default",
+    "updating_template_default": "Updating template default with ID: {id}",
+    "fetching_template_defaults": "Fetching template defaults",
+    "template_defaults_retrieved": "Template defaults retrieved successfully",
+    "status_changed_default": "Template default status changed successfully",
+    "changing_status_default": "Changing status of template default with ID: {id}",
+    "initializing_templates": "Initializing templates for tenant ID {tenantId}...",
+    "templates_initialized": "Templates for tenant ID {tenantId} have been initialized successfully.",
+    "tenant_id_required": "Tenant ID is required in the header.",
+    "fetching_templates_for_tenant": "Fetching templates for tenant: {tenantId}",
+    "fetching_templates_error": "Error fetching templates"
+  },
+  "site": {
+    "creating_site": "Creating site",
+    "site_created": "Site has been successfully created.",
+    "name_site_exists": "The name of the site already exists",
+    "fetching_all_sites": "Fetching all sites from the database",
+    "fetched_sites": "Fetched {count} sites",
+    "updating_site": "Updating site with id {id}",
+    "site_updated": "Site updated successfully",
+    "site_same_state": "The site is already in the same state",
+    "enter_state_site": "Enter the state of the site",
+    "updating_state_site": "Updating the state of the site",
+    "logo_uploading": "Uploading logo",
+    "logo_uploaded": "Logo uploaded successfully"
+  },
+  "auth": {
+    "reseting_password": "Trying to reset password",
+    "request_reset_password": "Request to reset password sended",
+    "token_reset_password_saved": "Token request to reset password saved successfully"
+  },
+  "email": {
+    "template_not_found": "Template not found",
+    "trying_create_email": "Trying to create email",
+    "email_reset_send": "Email to reset password sended",
+    "reset_password": {
+      "greeting": "Dear ",
+      "subject": "Reset Password - Planifiapp",
+      "receipt_request": "We have received a request to reset the password for your account.",
+      "reset_instruction": "To reset your password, click on the following link: ",
+      "reset_link_text": "Planifia - Reset Password",
+      "thanks_planifia": "Sincerely, The Planifia team.",
+      "ignore_email": "If you did not request a password reset, you can ignore this email."
+    }
+  },
+  "uploads": {
+    "file_success_uploaded": "Image uploaded and compressed successfully: {filename}",
+    "success_uploaded": "File uploaded successfully",
+    "finding_logo": "Finding logo",
+    "logo_found": "Logo found successfully"
+  }
+}

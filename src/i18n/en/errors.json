@@ -1,0 +1,109 @@
+{
+  "auth": {
+    "authorization_header_not_found": "Authorization header not found",
+    "token_not_found": "Token not found",
+    "invalid_token": "Invalid token",
+    "invalid_credentials": "Invalid credentials",
+    "login_error": "Login error",
+    "request_reset_password": "Error requesting password reset"
+  },
+  "user": {
+    "user_not_update_data": "User update data not found",
+    "user_creation_error": "Error creating user",
+    "user_update_error": "Error updating user",
+    "user_deletion_error": "An error occurred while deleting the user with ID: {id}",
+    "user_not_found": "User with ID {userId} not found.",
+    "password_reset_failed": "Failed to reset password for user with ID {userId}. Error: {error}."
+  },
+  "tenant": {
+    "tenant_not_found": "Tenant not found",
+    "tenant_id_required": "Tenant ID is required",
+    "tenant_creation_error": "Tenant creation error"
+  },
+  "email": {
+    "error_sending_email": "Error sending email"
+  },
+  "render_template": {
+    "error_rendering_template": "Error rendering template"
+  },
+  "quote": {
+    "quote_not_found": "Quote not found",
+    "quote_creation_error": "Quote creation error",
+    "quote_update_error": "Quote update error",
+    "error_fetching_quotes": "Error fetching quotes",
+    "quote_id_required": "Quote ID is required",
+    "recurrence_quote_creation_error": "Recurrence quote creation error",
+    "recurrence_quote_update_error": "Recurrence quote update error"
+  },
+  "recurrence": {
+    "days_of_week_required": "daysOfWeek is required for weekly recurrence",
+    "day_of_month_required": "dayOfMonth is required for monthly recurrence",
+    "months_of_year_required": "monthsOfYear is required for yearly recurrence",
+    "creation_error": "RecurrenceQuote creation error",
+    "update_error": "Error updating RecurrenceQuote",
+    "recurrence_quote_not_found": "RecurrenceQuote not found"
+  },
+  "client": {
+    "client_not_found": "Client not found",
+    "client_creation_error": "Client creation error",
+    "client_id_required": "Client ID is required",
+    "client_update_data_required": "Client update data is required",
+    "client_update_error": "Client update error",
+    "client_data_unique_error": "Client Data must be unique: {data}",
+    "client_invalid_pagination_params": "Page and limit must be greater than 0",
+    "client_failed_to_retrieve_clients": "Failed to retrieve clients from the database",
+    "client_delete_error": "Error deleting client",
+    "client_already_exists": "Client with {data} already exists"
+  },
+  "country": {
+    "country_not_found": "Country not found",
+    "country_creation_error": "Error creating country",
+    "country_fetch_error": "Error fetching countries"
+  },
+  "province": {
+    "province_not_found": "Province not found"
+  },
+  "canton": {
+    "canton_not_found": "Canton not found"
+  },
+  "parish": {
+    "parish_not_found": "Parish not found",
+    "parish_creation_error": "Error creating parish"
+  },
+  "template": {
+    "template_not_found": "Template not found",
+    "template_creation_error": "Error creating template",
+    "template_update_error": "Error updating template",
+    "template_action_not_found": "Template action not found",
+    "template_action_creation_error": "Error creating template action",
+    "template_action_update_error": "Error updating template action",
+    "template_env_not_found": "Template environment variable not found",
+    "template_env_creation_error": "Error creating template environment variable",
+    "template_env_update_error": "Error updating template environment variable",
+    "status_change_error": "Error changing status of template",
+    "template_default_not_found": "Template default not found",
+    "template_default_creation_error": "Error creating template default",
+    "template_default_update_error": "Error updating template default",
+    "status_change_default_error": "Error changing status of template default",
+    "template_init_error": "There was an error initializing the templates.",
+    "no_active_templates": "No active templates were found in the default template set.",
+    "tenant_id_required": "Tenant ID is required in the header.",
+    "fetching_templates_error": "Error fetching templates"
+  },
+  "site": {
+    "site_not_found": "Site not found",
+    "site_creation_error": "Error creating site",
+    "error_fetching_sites": "Error fetching sites",
+    "site_update_error": "Error updating site",
+    "invalid_name": "The name of the site is not valid"
+  },
+  "uploads": {
+    "invalid_image": "Invalid image",
+    "invalid_file_type": "The file must be a PNG or JPEG image",
+    "processing_error": "Error processing file",
+    "file_path_undefined": "File path is undefined",
+    "file_not_found": "File not found",
+    "removed_file_error": "Error removing file logo"
+  },
+  "internal_server_error": "Internal server error"
+}

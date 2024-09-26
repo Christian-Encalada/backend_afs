@@ -1,0 +1,110 @@
+{
+  "auth": {
+    "authorization_header_not_found": "Encabezado de autorización no encontrado",
+    "token_not_found": "Token no encontrado",
+    "invalid_token": "Token inválido",
+    "invalid_credentials": "Credenciales inválidas",
+    "login_error": "Error de inicio de sesión",
+    "request_reset_password": "Error al solicitar restablecimiento de contraseña"
+  },
+  "user": {
+    "user_not_update_data": "Datos de actualización de usuario no encontrados",
+    "user_creation_error": "Error al crear el usuario",
+    "user_update_error": "Error al actualizar el usuario",
+    "user_deletion_error": "Ocurrió un error al eliminar el usuario con ID: {{id}}",
+    "user_not_found": "Usuario con ID {userId} no encontrado.",
+    "password_reset_failed": "Fallo al restablecer la contraseña para el usuario con ID {userId}. Error: {error}."
+  },
+  "tenant": {
+    "tenant_not_found": "Tenant no encontrado",
+    "tenant_id_required": "Se requiere el ID del tenant",
+    "tenant_creation_error": "Error al crear el tenant"
+  },
+  "email": {
+    "error_sending_email": "Error al enviar el correo electrónico"
+  },
+  "render_template": {
+    "error_rendering_template": "Error al renderizar la plantilla"
+  },
+  "quote": {
+    "quote_not_found": "Cita no encontrada",
+    "quote_creation_error": "Error al crear la cita",
+    "quote_update_error": "Error al actualizar la cita",
+    "error_fetching_quotes": "Error al obtener las citas",
+    "quote_id_required": "Se requiere el ID de la cita",
+    "recurrence_quote_creation_error": "Error al crear la cita recurrente",
+    "recurrence_quote_update_error": "Error al actualizar la cita recurrente"
+  },
+  "recurrence": {
+    "days_of_week_required": "daysOfWeek es requerido para recurrencia semanal",
+    "day_of_month_required": "dayOfMonth es requerido para recurrencia mensual",
+    "months_of_year_required": "monthsOfYear es requerido para recurrencia anual",
+    "creation_error": "Error al crear RecurrenceQuote",
+    "update_error": "Error al actualizar RecurrenceQuote",
+    "recurrence_quote_not_found": "RecurrenceQuote no encontrado"
+  },
+  "client": {
+    "client_not_found": "Cliente no encontrado",
+    "client_creation_error": "Error al crear el cliente",
+    "client_id_required": "Se requiere el ID del cliente",
+    "client_update_data_required": "Se requiere datos de actualización del cliente",
+    "client_update_error": "Error al actualizar el cliente",
+    "client_data_unique_error": "Datos del cliente debe ser unicos: {data}",
+    "client_invalid_pagination_params": "La página y el límite deben ser mayores a 0",
+    "client_failed_to_retrieve_clients": "Error al obtener clientes de la base de datos",
+    "client_delete_error": "Error al eliminar el cliente",
+    "client_already_exists": "Cliente con {data} ya existe"
+  },
+  "country": {
+    "country_not_found": "País no encontrado",
+    "country_creation_error": "Error al crear el país",
+    "country_fetch_error": "Error al obtener los países"
+  },
+  "province": {
+    "province_not_found": "Provincia no encontrada"
+  },
+  "canton": {
+    "canton_not_found": "Cantón no encontrado"
+  },
+  "parish": {
+    "parish_not_found": "Parroquia no encontrada",
+    "parish_creation_error": "Error al crear la parroquia"
+  },
+  "template": {
+    "template_not_found": "Plantilla no encontrada",
+    "template_creation_error": "Error al crear la plantilla",
+    "template_update_error": "Error al actualizar la plantilla",
+    "template_action_not_found": "Acción de plantilla no encontrada",
+    "template_action_creation_error": "Error al crear la acción de plantilla",
+    "template_action_update_error": "Error al actualizar la acción de plantilla",
+    "template_env_not_found": "Variable de entorno de la plantilla no encontrada",
+    "template_env_creation_error": "Error al crear la variable de entorno de la plantilla",
+    "template_env_update_error": "Error al actualizar la variable de entorno de la plantilla",
+    "status_change_error": "Error al cambiar el estado de la plantilla",
+    "template_default_not_found": "Plantilla predeterminada no encontrada",
+    "template_default_creation_error": "Error al crear la plantilla predeterminada",
+    "template_default_update_error": "Error al actualizar la plantilla predeterminada",
+    "status_change_default_error": "Error al cambiar el estado de la plantilla predeterminada",
+    "template_init_error": "Hubo un error al inicializar las plantillas.",
+    "no_active_templates": "No se encontraron plantillas activas en el conjunto de plantillas predeterminadas.",
+    "tenant_id_required": "El ID del tenant es obligatorio en el encabezado.",
+    "fetching_templates_error": "Error al obtener las plantillas"
+  },
+  "site": {
+    "site_not_found": "Sitio no encontrado",
+    "site_creation_error": "Error al crear el sitio",
+    "error_fetching_sites": "Error al obtener los sitios",
+    "name_site_exists": "El nombre del sitio ya existe",
+    "site_update_error": "Error al actualizar el sitio",
+    "invalid_name": "El nombre del sitio no es válido"
+  },
+  "uploads": {
+    "invalid_image": "Imagen inválida",
+    "invalid_file_type": "El archivo debe ser una imagen PNG o JPEG",
+    "processing_error": "Error al procesar el archivo",
+    "file_path_undefined": "La ruta del archivo no está definida",
+    "file_not_found": "Archivo no encontrado",
+    "removed_file_error": "Error al eliminar el archivo del logo"
+  },
+  "internal_server_error": "Error interno del servidor"
+}

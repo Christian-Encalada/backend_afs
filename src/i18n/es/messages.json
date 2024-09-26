@@ -1,0 +1,138 @@
+{
+  "user": {
+    "user_created": "El usuario ha sido creado exitosamente.",
+    "user_updated": "El usuario ha sido actualizado exitosamente.",
+    "bad_request": "Solicitud incorrecta.",
+    "fetching_user": "Obteniendo usuario con ID: {id}",
+    "creating_user": "Creando usuario",
+    "updating_user": "Actualizando usuario con ID: {id}",
+    "fetching_users": "Obteniendo usuarios",
+    "changed_password": "Contraseña cambiada exitosamente",
+    "deleting_user": "Eliminando usuario con ID: {id}",
+    "user_deleted": "El usuario {username} ha sido eliminado con éxito.",
+    "resetting_password": "Restableciendo la contraseña para el usuario con ID {userId}.",
+    "password_reset_successful": "La contraseña ha sido restablecida exitosamente para el usuario con ID {userId}.",
+    "fetched_users": "Se han obtenido {count} usuarios."
+  },
+  "client": {
+    "client_created": "El cliente ha sido creado exitosamente.",
+    "client_updated": "El cliente ha sido actualizado exitosamente.",
+    "fetching_all_clients": "Obteniendo todos los clientes de la base de datos",
+    "fetched_clients": "Se obtuvieron {count} clientes",
+    "fetching_client": "Obteniendo cliente con id {id}",
+    "client_does_not_exist": "El cliente no existe",
+    "client_deleted": "Cliente eliminado exitosamente"
+  },
+  "quote": {
+    "fetching_all_quotes": "Obteniendo todas las cotizaciones de la base de datos",
+    "fetched_quotes": "Se obtuvieron {count} cotizaciones",
+    "fetching_quote": "Obteniendo cita con id {id}",
+    "quote_created": "Cita creada exitosamente",
+    "quote_updated": "Cita actualizada exitosamente",
+    "creating_quote": "Creando cita",
+    "creating_recurrence_quote": "Creando cita recurrente",
+    "recurrence_quote_created": "Cita recurrente creada exitosamente",
+    "updating_recurrence_quote": "Actualizando cita recurrente con id {id}",
+    "recurrence_quote_updated": "Cita recurrente actualizada exitosamente"
+  },
+  "canton": {
+    "canton_created": "El cantón ha sido creado exitosamente.",
+    "fetching_cantons": "Obteniendo cantones",
+    "cantons_retrieved": "Cantones obtenidos exitosamente"
+  },
+  "province": {
+    "province_created": "La provincia ha sido creada exitosamente.",
+    "fetching_provinces": "Obteniendo provincias",
+    "provinces_retrieved": "Provincias obtenidas exitosamente"
+  },
+  "parish": {
+    "parish_created": "La parroquia ha sido creada exitosamente.",
+    "fetching_parishes": "Obteniendo parroquias",
+    "parishes_retrieved": "Parroquias obtenidas exitosamente"
+  },
+  "country": {
+    "country_created": "El país ha sido creado exitosamente.",
+    "fetched_countries": "Países obtenidos"
+  },
+  "template": {
+    "template_created": "La plantilla ha sido creada exitosamente.",
+    "template_updated": "La plantilla ha sido actualizada exitosamente.",
+    "template_deleted": "La plantilla ha sido eliminada exitosamente.",
+    "creating_template": "Creando plantilla",
+    "updating_template": "Actualizando plantilla con ID: {id}",    
+    "fetching_all_templates": "Obteniendo todas las plantillas...",
+    "fetching_filtered_templates": "Obteniendo plantillas filtradas...",
+    "fetched_all_templates": "Se han obtenido todas las plantillas.",
+    "fetched_filtered_templates": "Se han obtenido {count} plantillas filtradas.",
+
+    "templates_retrieved": "Plantillas obtenidas exitosamente",
+    "status_changed": "Estado de la plantilla cambiado exitosamente",
+    "changing_status": "Cambiando estado de la plantilla con ID: {id}",
+    "template_action_created": "La acción de plantilla ha sido creada exitosamente.",
+    "template_action_updated": "La acción de plantilla ha sido actualizada exitosamente.",
+    "creating_template_action": "Creando acción de plantilla",
+    "updating_template_action": "Actualizando acción de plantilla con ID: {id}",
+    "fetching_template_actions": "Obteniendo acciones de plantilla",
+    "template_actions_retrieved": "Acciones de plantilla obtenidas exitosamente",
+    "template_env_created": "La variable de entorno de la plantilla ha sido creada exitosamente.",
+    "template_env_updated": "La variable de entorno de la plantilla ha sido actualizada exitosamente.",
+    "creating_template_env": "Creando variable de entorno de plantilla",
+    "updating_template_env": "Actualizando variable de entorno de plantilla con ID: {id}",
+    "fetching_template_envs": "Obteniendo variables de entorno de plantilla",
+    "template_envs_retrieved": "Variables de entorno de plantilla obtenidas exitosamente",
+    "template_default_created": "La plantilla predeterminada ha sido creada exitosamente.",
+    "template_default_updated": "La plantilla predeterminada ha sido actualizada exitosamente.",
+    "creating_template_default": "Creando plantilla predeterminada",
+    "updating_template_default": "Actualizando plantilla predeterminada con ID: {id}",
+    "fetching_template_defaults": "Obteniendo plantillas predeterminadas",
+    "template_defaults_retrieved": "Plantillas predeterminadas obtenidas exitosamente",
+    "status_changed_default": "Estado de la plantilla predeterminada cambiado exitosamente",
+    "changing_status_default": "Cambiando estado de la plantilla predeterminada con ID: {id}",
+    "initializing_templates": "Inicializando las plantillas para el tenant ID {tenantId}...",
+    "templates_initialized": "Las plantillas para el tenant ID {tenantId} se han inicializado correctamente.",
+
+    "tenant_id_required": "El ID de tenant es obligatorio en el encabezado.",
+    "fetching_templates_for_tenant": "Obteniendo plantillas para el tenant: {tenantId}",
+    "fetching_templates_error": "Error al obtener las plantillas"
+
+  },
+  "site": {
+    "creating_site": "Creando sitio",
+    "site_created": "El sitio ha sido creado exitosamente.",
+    "name_site_exists": "El nombre del sitio ya existe",
+    "fetching_all_sites": "Obteniendo todos los sitios de la base de datos",
+    "fetched_sites": "Se obtuvieron {count} sitios",
+    "updating_site": "Actualizando sitio con id {id}",
+    "site_updated": "Sitio actualizado exitosamente",
+    "site_same_state": "El sitio ya se encuentra en el mismo estado",
+    "enter_state_site": "Ingrese el estado del sitio",
+    "updating_state_site": "Actualizando el estado del sitio",
+    "logo_uploading": "Subiendo logo",
+    "logo_uploaded": "Logo subido exitosamente"
+  },
+  "auth": {
+    "reseting_password": "Intentando restablecer la contraseña",
+    "request_reset_password": "Solicitud para restablecer la contraseña enviada",
+    "token_reset_password_saved": "Token para restablecer la contraseña guardado exitosamente"
+  },
+  "email": {
+    "template_not_found": "Plantilla de correo electrónico no encontrada",
+    "trying_create_email": "Intentando crear correo electrónico",
+    "email_reset_send": "Correo electrónico para restablecer la contraseña enviado",
+    "reset_password": {
+      "greeting": "Estimado/a ",
+      "subject": "Solicitud de restablecimiento de contraseña",
+      "receipt_request": "Hemos recibido una solicitud para restablecer la contraseña de tu cuenta.",
+      "reset_instruction": "Para establecer tu contraseña, haz clic en el siguiente enlace: ",
+      "reset_link_text": "Planifia - Restablecer Contraseña",
+      "thanks_planifia": "Atentamente, El equipo de Planifia.",
+      "ignore_email": "Si no has solicitado un restablecimiento de contraseña, puedes ignorar este correo electrónico."
+    }
+  },
+  "uploads": {
+    "file_success_uploaded": "Imagen subida y comprimida exitosamente: {filename}",
+    "success_uploaded": "Archivo subido exitosamente",
+    "finding_logo": "Buscando logo",
+    "logo_found": "Logo encontrado exitosamente"
+  }
+}
